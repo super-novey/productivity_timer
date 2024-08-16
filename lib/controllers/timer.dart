@@ -47,7 +47,7 @@ class CountDownTimer {
       if (_isActive) {
         _time = _time - const Duration(seconds: 1);
         _radius = _time.inSeconds / _fullTime.inSeconds;
-        if (_time.inSeconds < 0) {
+        if (_time.inSeconds < 1) {
           _isActive = false;
         }
       }
